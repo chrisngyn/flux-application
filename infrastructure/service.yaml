@@ -6,7 +6,7 @@ metadata:
 spec:
   selector:
     app: python-sample
-  type: ClusterIP
+  type: NodePort
   ports:
   - name: python-sample
     protocol: TCP
