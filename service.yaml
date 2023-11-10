@@ -1,0 +1,17 @@
+# https://kubernetes.io/docs/concepts/services-networking/service/
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-sample-service 
+spec:
+  selector:
+    app: python-sample
+  type: ClusterIP
+  ports:
+  - name: python-sample
+    protocol: TCP
+    port: 8080
+    targetPort: 8000
+    nodePort: 30001
+---
+
