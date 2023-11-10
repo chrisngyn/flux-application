@@ -27,5 +27,8 @@ spec:
         ports:
         - containerPort:  8000
           name:  python-sample
+        env:
+        - name:  TEST_ENV
+          value:  python-sample
 ---
 
