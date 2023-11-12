@@ -30,5 +30,10 @@ spec:
         env:
         - name:  TEST_ENV
           value:  python-sample
+        - name: TEST_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: pacman-externalsecrets
+              key: token
 ---
 
